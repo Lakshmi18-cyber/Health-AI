@@ -1,0 +1,132 @@
+<!doctype html>
+<html
+	lang="en"
+	style="
+		margin: 0;
+		padding: 0;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+	"
+>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta property="og:title" content="Gradio" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="{url}" />
+		<meta property="og:description" content="Click to try out the app!" />
+		<meta
+			property="og:image"
+			content="https://raw.githubusercontent.com/gradio-app/gradio/main/js/_website/src/lib/assets/img/header-image.jpg"
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:creator" content="@Gradio" />
+		<meta name="twitter:title" content="Gradio" />
+		<meta name="twitter:description" content="Click to try out the app!" />
+		<meta
+			name="twitter:image"
+			content="https://raw.githubusercontent.com/gradio-app/gradio/main/js/_website/src/lib/assets/img/header-image.jpg"
+		/>
+
+		<style>
+			:root {
+				--bg: white;
+				--col:   #27272a;
+				--bg-dark: #0f0f11;
+				--col-dark: #f4f4f5;
+			}
+
+
+			body {
+				background: var(--bg);
+				color: var(--col);
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: var(--bg-dark);
+					color: var(--col-dark);
+				}
+			}
+		</style>
+
+		<meta property="og:url" content="https://gradio.app/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="" />
+		<meta property="og:title" content="Gradio" />
+		<meta
+			property="og:description"
+			content=""
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:creator" content="@teamGradio" />
+		<meta name="twitter:title" content="Gradio" />
+		<meta
+			name="twitter:description"
+			content=""
+		/>
+		<meta name="twitter:image" content="" />
+
+		<script data-gradio-mode>
+			window.__gradio_mode__ = "app";
+			window.iFrameResizer = {
+				heightCalculationMethod: "taggedElement"
+			};
+			window.parent?.postMessage(
+				{ type: "SET_SCROLLING", enabled: false },
+				"*"
+			);
+		</script>
+
+		<script>window.gradio_config = {"version":"5.43.1","api_prefix":"/gradio_api","mode":"blocks","app_id":5925168667358565678,"dev_mode":false,"vibe_mode":false,"analytics_enabled":true,"components":[{"id":1,"type":"markdown","props":{"value":"# Medical AI Assistant","show_label":false,"rtl":false,"latex_delimiters":[{"left":"$$","right":"$$","display":true}],"visible":true,"elem_classes":[],"preserved_by_key":["value"],"sanitize_html":true,"line_breaks":false,"header_links":false,"show_copy_button":false,"container":false,"padding":false,"name":"markdown","_selectable":false},"skip_api":false,"component_class_id":"543eb5f8dcfca947ba66ab196db059c79cdca82621b183bfcd8bbe4afebcd005","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"# Hello!"},{"id":2,"type":"markdown","props":{"value":"**Disclaimer: This is for informational purposes only. Always consult healthcare professionals for medical advice.**","show_label":false,"rtl":false,"latex_delimiters":[{"left":"$$","right":"$$","display":true}],"visible":true,"elem_classes":[],"preserved_by_key":["value"],"sanitize_html":true,"line_breaks":false,"header_links":false,"show_copy_button":false,"container":false,"padding":false,"name":"markdown","_selectable":false},"skip_api":false,"component_class_id":"543eb5f8dcfca947ba66ab196db059c79cdca82621b183bfcd8bbe4afebcd005","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"# Hello!"},{"id":3,"type":"tabs","props":{"visible":true,"preserved_by_key":[],"name":"tabs"},"skip_api":true,"component_class_id":"22dbb3f249d0ebfccaf6679c6fddf2a5c3a3deaaebf43709589d9f325a4e053e","key":null},{"id":4,"type":"tabitem","props":{"label":"Disease Prediction","visible":true,"interactive":true,"preserved_by_key":[],"name":"tab"},"skip_api":true,"component_class_id":"50cebf6c1ab5a230766014a0047026712a25674fc1ac94d0310963ce1423abb0","key":null},{"id":5,"type":"row","props":{"variant":"default","visible":true,"equal_height":false,"show_progress":false,"preserved_by_key":[],"name":"row"},"skip_api":true,"component_class_id":"d31af921ae188765327079cfc062d57afc3fd6f1774765ed869512a94f7c5c22","key":null},{"id":6,"type":"column","props":{"scale":1,"min_width":320,"variant":"default","visible":true,"show_progress":false,"preserved_by_key":[],"name":"column"},"skip_api":true,"component_class_id":"d32cc8b06253a743628a25220fc5e2a82556f3b9f3a8810ac82cd17bb190798c","key":null},{"id":7,"type":"textbox","props":{"type":"text","lines":4,"placeholder":"e.g., fever, headache, cough, fatigue...","label":"Enter Symptoms","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"preserved_by_key":["value"],"rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"9662103783aaa2c9d411262219a021534ef712eba183b6b1911957c1aa61468e","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":8,"type":"button","props":{"value":"Analyze Symptoms","variant":"secondary","size":"lg","visible":true,"interactive":true,"elem_classes":[],"preserved_by_key":["value"],"name":"button","_selectable":false},"skip_api":true,"component_class_id":"d94e42bc0de64d88926a97585021956fe523296790198ad29a92dcb81a90b02d","key":null},{"id":9,"type":"form","props":{"scale":0,"min_width":0,"preserved_by_key":[],"name":"form"},"skip_api":true,"component_class_id":"40d4832c92b433558cfc7a2a218841dc7dec54c8c9f9470aa3fca95c935b8614","key":null},{"id":10,"type":"column","props":{"scale":1,"min_width":320,"variant":"default","visible":true,"show_progress":false,"preserved_by_key":[],"name":"column"},"skip_api":true,"component_class_id":"d32cc8b06253a743628a25220fc5e2a82556f3b9f3a8810ac82cd17bb190798c","key":null},{"id":11,"type":"textbox","props":{"type":"text","lines":20,"label":"Possible Conditions \u0026 Recommendations","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"preserved_by_key":["value"],"rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"9662103783aaa2c9d411262219a021534ef712eba183b6b1911957c1aa61468e","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":12,"type":"form","props":{"scale":0,"min_width":0,"preserved_by_key":[],"name":"form"},"skip_api":true,"component_class_id":"40d4832c92b433558cfc7a2a218841dc7dec54c8c9f9470aa3fca95c935b8614","key":null},{"id":13,"type":"tabitem","props":{"label":"Treatment Plans","visible":true,"interactive":true,"preserved_by_key":[],"name":"tab"},"skip_api":true,"component_class_id":"50cebf6c1ab5a230766014a0047026712a25674fc1ac94d0310963ce1423abb0","key":null},{"id":14,"type":"row","props":{"variant":"default","visible":true,"equal_height":false,"show_progress":false,"preserved_by_key":[],"name":"row"},"skip_api":true,"component_class_id":"d31af921ae188765327079cfc062d57afc3fd6f1774765ed869512a94f7c5c22","key":null},{"id":15,"type":"column","props":{"scale":1,"min_width":320,"variant":"default","visible":true,"show_progress":false,"preserved_by_key":[],"name":"column"},"skip_api":true,"component_class_id":"d32cc8b06253a743628a25220fc5e2a82556f3b9f3a8810ac82cd17bb190798c","key":null},{"id":16,"type":"textbox","props":{"type":"text","lines":2,"placeholder":"e.g., diabetes, hypertension, migraine...","label":"Medical Condition","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"preserved_by_key":["value"],"rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"9662103783aaa2c9d411262219a021534ef712eba183b6b1911957c1aa61468e","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":17,"type":"number","props":{"value":30,"label":"Age","show_label":true,"container":true,"min_width":160,"visible":true,"elem_classes":[],"preserved_by_key":["value"],"step":1,"name":"number","_selectable":false},"skip_api":false,"component_class_id":"cafd1beb1f5138711bc981498ad70eed95dabbc40341794bc01831c4ec025943","key":null,"api_info":{"type":"number"},"api_info_as_input":{"type":"number"},"api_info_as_output":{"type":"number"},"example_inputs":3},{"id":18,"type":"dropdown","props":{"choices":[["Male","Male"],["Female","Female"],["Other","Other"]],"value":"Male","type":"value","allow_custom_value":false,"filterable":true,"label":"Gender","show_label":true,"container":true,"min_width":160,"visible":true,"elem_classes":[],"preserved_by_key":["value"],"name":"dropdown","_selectable":false},"skip_api":false,"component_class_id":"00d716ccc02b6ee02e757c45a9d0d54672fddf8ba5dc848b6368bc0cfa11160e","key":null,"api_info":{"type":"string","enum":["Male","Female","Other"]},"api_info_as_input":{"type":"string","enum":["Male","Female","Other"]},"api_info_as_output":{"type":"string","enum":["Male","Female","Other"]},"example_inputs":"Male"},{"id":19,"type":"textbox","props":{"type":"text","lines":3,"placeholder":"Previous conditions, allergies, medications or None","label":"Medical History","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"preserved_by_key":["value"],"rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"9662103783aaa2c9d411262219a021534ef712eba183b6b1911957c1aa61468e","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":20,"type":"button","props":{"value":"Generate Treatment Plan","variant":"secondary","size":"lg","visible":true,"interactive":true,"elem_classes":[],"preserved_by_key":["value"],"name":"button","_selectable":false},"skip_api":true,"component_class_id":"d94e42bc0de64d88926a97585021956fe523296790198ad29a92dcb81a90b02d","key":null},{"id":21,"type":"form","props":{"scale":0,"min_width":0,"preserved_by_key":[],"name":"form"},"skip_api":true,"component_class_id":"40d4832c92b433558cfc7a2a218841dc7dec54c8c9f9470aa3fca95c935b8614","key":null},{"id":22,"type":"column","props":{"scale":1,"min_width":320,"variant":"default","visible":true,"show_progress":false,"preserved_by_key":[],"name":"column"},"skip_api":true,"component_class_id":"d32cc8b06253a743628a25220fc5e2a82556f3b9f3a8810ac82cd17bb190798c","key":null},{"id":23,"type":"textbox","props":{"type":"text","lines":20,"label":"Personalized Treatment Plan","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"preserved_by_key":["value"],"rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"9662103783aaa2c9d411262219a021534ef712eba183b6b1911957c1aa61468e","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":24,"type":"form","props":{"scale":0,"min_width":0,"preserved_by_key":[],"name":"form"},"skip_api":true,"component_class_id":"40d4832c92b433558cfc7a2a218841dc7dec54c8c9f9470aa3fca95c935b8614","key":null}],"css":"","connect_heartbeat":false,"js":"","head":"","title":"Gradio","space_id":null,"enable_queue":true,"show_error":false,"show_api":true,"is_colab":true,"max_file_size":null,"stylesheets":["https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600\u0026display=swap"],"theme":"default","protocol":"sse_v3","body_css":{"body_background_fill":"white","body_text_color":"#27272a","body_background_fill_dark":"#0f0f11","body_text_color_dark":"#f4f4f5"},"fill_height":false,"fill_width":false,"theme_hash":"dcc5ba6daa59190cd89158b9dcd638cb327c8d2793466af78361ece68e126118","pwa":false,"pages":[["","Home"]],"page":{"":{"layout":{"id":0,"children":[{"id":1},{"id":2},{"id":3,"children":[{"id":4,"children":[{"id":5,"children":[{"id":6,"children":[{"id":9,"children":[{"id":7}]},{"id":8}]},{"id":10,"children":[{"id":12,"children":[{"id":11}]}]}]}]},{"id":13,"children":[{"id":14,"children":[{"id":15,"children":[{"id":21,"children":[{"id":16},{"id":17},{"id":18},{"id":19}]},{"id":20}]},{"id":22,"children":[{"id":24,"children":[{"id":23}]}]}]}]}]}]},"components":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],"dependencies":[0,1]}},"mcp_server":false,"i18n_translations":null,"dependencies":[{"id":0,"targets":[[8,"click"]],"inputs":[7],"outputs":[11],"backend_fn":true,"js":null,"queue":true,"api_name":"disease_prediction","api_description":null,"scroll_to_output":false,"show_progress":"full","show_progress_on":null,"batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_only_on_failure":false,"trigger_mode":"once","show_api":true,"rendered_in":null,"render_id":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null,"js_implementation":null},{"id":1,"targets":[[20,"click"]],"inputs":[16,17,18,19],"outputs":[23],"backend_fn":true,"js":null,"queue":true,"api_name":"treatment_plan","api_description":null,"scroll_to_output":false,"show_progress":"full","show_progress_on":null,"batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_only_on_failure":false,"trigger_mode":"once","show_api":true,"rendered_in":null,"render_id":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null,"js_implementation":null}],"layout":{"id":0,"children":[{"id":1},{"id":2},{"id":3,"children":[{"id":4,"children":[{"id":5,"children":[{"id":6,"children":[{"id":9,"children":[{"id":7}]},{"id":8}]},{"id":10,"children":[{"id":12,"children":[{"id":11}]}]}]}]},{"id":13,"children":[{"id":14,"children":[{"id":15,"children":[{"id":21,"children":[{"id":16},{"id":17},{"id":18},{"id":19}]},{"id":20}]},{"id":22,"children":[{"id":24,"children":[{"id":23}]}]}]}]}]}]},"username":null,"deep_link_state":"none","current_page":"","root":"https://a97dd87fe20143d472.gradio.live"};</script><script>window.gradio_api_info = {"named_endpoints":{"/disease_prediction":{"parameters":[{"label":"Enter Symptoms","parameter_name":"symptoms","parameter_has_default":false,"parameter_default":null,"type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox","example_input":"Hello!!"}],"returns":[{"label":"Possible Conditions \u0026 Recommendations","type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox"}],"show_api":true,"description":""},"/treatment_plan":{"parameters":[{"label":"Medical Condition","parameter_name":"condition","parameter_has_default":false,"parameter_default":null,"type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox","example_input":"Hello!!"},{"label":"Age","parameter_name":"age","parameter_has_default":true,"parameter_default":30,"type":{"type":"number"},"python_type":{"type":"float","description":""},"component":"Number","example_input":3},{"label":"Gender","parameter_name":"gender","parameter_has_default":true,"parameter_default":"Male","type":{"type":"string","enum":["Male","Female","Other"]},"python_type":{"type":"Literal[\u0027Male\u0027, \u0027Female\u0027, \u0027Other\u0027]","description":""},"component":"Dropdown","example_input":"Male"},{"label":"Medical History","parameter_name":"medical_history","parameter_has_default":false,"parameter_default":null,"type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox","example_input":"Hello!!"}],"returns":[{"label":"Personalized Treatment Plan","type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox"}],"show_api":true,"description":""}},"unnamed_endpoints":{}};</script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.contentWindow.min.js"
+			async
+		></script>
+
+		<link rel="manifest" href="/manifest.json" />
+		<script type="module" crossorigin src="https://gradio.s3-us-west-2.amazonaws.com/5.43.1/gradio.js"></script>
+		
+	</head>
+
+	<body
+		style="
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+		"
+	>
+		<gradio-app
+			control_page_title="true"
+			embed="false"
+			eager="true"
+			style="display: flex; flex-direction: column; flex-grow: 1"
+		>
+		</gradio-app>
+		<script>
+			const ce = document.getElementsByTagName("gradio-app");
+
+			if (ce[0]) {
+				ce[0].addEventListener("domchange", () => {
+					document.body.style.padding = "0";
+				});
+				document.body.style.padding = "0";
+			}
+		</script>
+	</body>
+</html>
